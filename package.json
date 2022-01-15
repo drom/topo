@@ -1,0 +1,39 @@
+{
+  "name": "topo",
+  "version": "0.1.0",
+  "description": "Topology",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint lib test && mocha",
+    "browserify": "browserify -x web-worker lib/app.js > app/main.js",
+    "build": "browserify -x web-worker lib/app.js | terser --compress -o app/main.js",
+    "watch": "watchify -x web-worker lib/app.js -o app/main.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavedrom/topo.git"
+  },
+  "author": "Aliaksei Chapyzhenka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wavedrom/topo/issues"
+  },
+  "homepage": "https://github.com/wavedrom/topo#readme",
+  "devDependencies": {
+    "@drom/eslint-config": "^0.10.0",
+    "browserify": "^17.0.0",
+    "chai": "^4.3.4",
+    "commander": "^8.3.0",
+    "elkjs": "^0.7.1",
+    "eslint": "^7.32.0",
+    "http-server": "^13.0.2",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "onml": "^2.1.0",
+    "terser": "^5.9.0",
+    "watchify": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node8"
+  }
+}

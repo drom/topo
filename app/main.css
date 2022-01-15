@@ -1,0 +1,37 @@
+#content {
+  text-align: center;
+}
+
+.topo-grid > rect {
+  fill: #555;
+  width: 2;
+  height: 2
+}
+
+.topo-node > rect {
+  fill: #ffffff22;
+  stroke-width: 1px;
+  stroke: #ffffff33;
+}
+
+.topo-port > rect {
+  fill: #77bbff22;
+  stroke-width: 1px;
+  stroke: #ffffff33;
+}
+
+.topo-edge > path {
+  fill: none;
+  stroke-width: 1px;
+  stroke: #ffffff;
+}
+
+body {
+  overflow: hidden;
+  margin: 0px;
+  border: 0px;
+  background: #111;
+  color: #fff;
+  font-family: 'Iosevka';
+  /* font-size: 16px; */
+}
