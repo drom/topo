@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint lib test && mocha",
-    "browserify": "browserify -x web-worker lib/app.js > app/main.js",
-    "build": "browserify -x web-worker lib/app.js | terser --compress -o app/main.js",
-    "watch": "watchify -x web-worker lib/app.js -o app/main.js -v"
+    "browserify": "browserify -x web-worker lib/app.js > docs/main.js",
+    "build": "browserify -x web-worker lib/app.js | terser --compress -o docs/main.js",
+    "watch": "watchify -x web-worker lib/app.js -o docs/main.js -v"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wavedrom/topo.git"
+    "url": "git+https://github.com/drom/topo.git"
   },
   "author": "Aliaksei Chapyzhenka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wavedrom/topo/issues"
+    "url": "https://github.com/drom/topo/issues"
   },
-  "homepage": "https://github.com/wavedrom/topo#readme",
+  "homepage": "https://github.com/drom/topo#readme",
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
     "browserify": "^17.0.0",
