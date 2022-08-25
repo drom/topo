@@ -33,7 +33,7 @@ jobs:
       - name: npm
         run: |
           npm i
-          npm run browserify
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
