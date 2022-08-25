@@ -19,6 +19,9 @@
     "url": "https://github.com/drom/topo/issues"
   },
   "homepage": "https://github.com/drom/topo#readme",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
     "browserify": "^17.0.0",
