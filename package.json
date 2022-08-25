@@ -4,7 +4,7 @@
   "description": "Topology",
   "main": "index.js",
   "scripts": {
-    "test": "eslint lib test && mocha",
+    "test": "eslint lib",
     "browserify": "browserify -x web-worker lib/app.js > docs/main.js",
     "build": "browserify -x web-worker lib/app.js | terser --compress -o docs/main.js",
     "watch": "watchify -x web-worker lib/app.js -o docs/main.js -v"
