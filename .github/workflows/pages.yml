@@ -30,6 +30,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: npm
+        run: |
+          npm i
+          npm run browserify
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
